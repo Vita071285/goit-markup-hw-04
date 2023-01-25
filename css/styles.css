@@ -158,17 +158,14 @@ gap: 40px;
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.product-button:hover{
-
-}
+.product-button:hover{}
 /*HERO*/
 .hero {
     max-width: 1440px;
     padding: 188px 0;
     height: 600px;
-    /*background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) , url(/images/people-office.jpg) ;*/
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) , url(/images/people-office.jpg) ;
     background-color: var(--background-color);
-    background-color: red;
     background-size: cover;
     background-position: center;
     margin-left: auto;
