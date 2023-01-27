@@ -147,6 +147,7 @@ gap: 40px;
 .hero-button:focus {
     background-color:#404BBF; 
     color:var(--hero-title);
+    border-color: rgba(0, 0, 0, 0);
 
 }
 
@@ -203,6 +204,7 @@ gap: 40px;
     padding: 16px 32px;
     display: inline-block;
     min-width: 169px;
+    border-color:rgba(0,0,0,0);
 }
 
 /*SECTION Upper */
@@ -248,15 +250,16 @@ gap: 0;
     margin-top: 8px;
 }
 .item-icon {
-    display: block;
-    content: "";
+    display: flex;
     background-size: contain;
-    padding-top: 24px;
     background-position: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     height: 112px;
     background-color: #f4f4fd;}
-
+.icon{
+}
 
 /*
     .item-icon {
@@ -388,18 +391,20 @@ border-radius: 4px;
     border-radius: 50%;
     background-color: #4D5AE5;
 }
+.social-list-icon {
+    color: #F4F4FD;
+
+}
 .ocean:hover,
 .ocean:focus {
     background-color:#404BBF ;
 }
+/*------customers-------*/
 .customers {
 padding-top: 110px ; 
 padding-bottom: 120px ;
 }
-.social-list-icon {
-    color: #F4F4FD;
-    
-}
+
 .customers-link:is(:hover,:focus){
     color:#404BBF;
     border-color: #404BBF;
@@ -528,9 +533,10 @@ padding-bottom: 120px ;
 
 .element:hover,
 .element:focus {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
     .product-buttons .item:not(:last-child) {
     margin-right: 24px;
@@ -566,9 +572,8 @@ padding-bottom: 120px ;
 }
 
 .element {
-    box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);;
     background: #FFFFFF;
-    border: 1px solid rgba(231, 233, 252, 1);
     width: calc((100% - 48px) / 3)
     }
 
